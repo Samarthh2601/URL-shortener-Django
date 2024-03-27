@@ -41,6 +41,9 @@ def redirect_url(request: HttpRequest, short_url: str):
 def about(request: HttpRequest):
     return render(request, 'urlShort/about.html')
 
+def api_docs(request: HttpRequest):
+    return render(request, 'urlShort/api_docs.html')
+
 def api_shortener(request: HttpRequest):
     long_url = request.headers.get('long_url')
     
