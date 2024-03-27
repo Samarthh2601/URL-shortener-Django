@@ -1,0 +1,7 @@
+{% extends 'urlShort/base.html' %}
+{% block content %}
+    <h1>Short URL</h1>
+    <p>Short URL: <a href="/{{ short_url }}">/{{ short_url }}</a></p>
+    <a href="{% url 'generate-url' %}">Generate another</a>
+{% endblock %}
+```
